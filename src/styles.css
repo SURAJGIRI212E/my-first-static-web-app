@@ -1,21 +1,103 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2:wght@700&display=swap');
+/* reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+body{
+    background-color: rgb(220, 188, 188);
+    font-family: 'baloo 2',sans-serif;
+}
+p{
+    font-family: 'Baloo Bhaijaan 2',sans-serif;
+}
+a{
+    text-decoration:none;
+    color: white;
+    display: inline-block;
+}
+li{
+    list-style: none;
 }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+/* utility */
+
+.flex{
+    display:flex;
+}
+.container{
+    margin-left: 90px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+/* 
+.primary-back{
+    background-color: aquamarine;
+}
+.seconadry-back{
+    background-color:cornflowerblue;
+}
+.teritry-back{
+    background-color: gold;
+} */
+.nav-color{
+    width: 49px;
+    height: 44px;
+    border-radius: 39px;
+    background-color: chartreuse;
+
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+/* main */
+.imglogo{
+    width: 80px;
+    height: 30px;
+}
+.container_head{
+    justify-content:space-between;
+}
+.nav-link{
+    margin:10px;
+    padding: 0px;
+    width: 0%;  
+    transition: all .5s ease-in-out;
+}
+.nav-link:hover{
+    cursor: pointer;
+    color: coral;
+}
+
+.navbar{
+    justify-self: center;
+}
+
+#shopicon{
+    margin-left: 60px;
+}
+
+.section_container{
+    margin:0px 50px 0px 50px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+}
+
+.text{
+    padding: 100px;
+    flex-direction: column;
+    justify-content:space-around;
+    
+    align-self: flex-end;
+
+}
+
+.ver-navbar{
+    flex-direction: column;
+    row-gap: 20px;
+    align-self: center;
+    align-items: center;
+    
 }
